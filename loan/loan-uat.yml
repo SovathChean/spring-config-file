@@ -1,6 +1,6 @@
 spring:
   application:
-    name: spring-account-service
+    name: spring-loan-service-uat
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/bakong

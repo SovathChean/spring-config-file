@@ -15,6 +15,7 @@ rest:
     write-timeout: 600
     max-idle-connections: 200
     keep-alive-duration: 300
+#mybatis
 mybatis-plus:
   mapper-locations: classpath*:/mapper/*/*.xml
   global-config:

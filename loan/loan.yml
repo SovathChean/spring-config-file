@@ -1,0 +1,30 @@
+spring:
+  main:
+    allow-circular-references: true
+  mvc:
+    throw-exception-if-no-handler-found: true
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  sql:
+    init:
+      mode: always
+rest:
+  http:
+    connect-timeout: 30000
+    read-timeout: 30000
+    write-timeout: 600
+    max-idle-connections: 200
+    keep-alive-duration: 300
+#mybatis
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/*/*.xml
+  global-config:
+    id-type: 2
+    field-strategy: 2
+    db-column-underline: true
+    refresh-mapper: true
+    logic-delete-value: 0
+    logic-not-delete-value: 1
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
