@@ -7,14 +7,7 @@ spring:
       matching-strategy: ant_path_matcher
   sql:
     init:
-      mode: always
-rest:
-  http:
-    connect-timeout: 30000
-    read-timeout: 30000
-    write-timeout: 600
-    max-idle-connections: 200
-    keep-alive-duration: 300
+      mode: alwayss
 #mybatis
 mybatis-plus:
   mapper-locations: classpath*:/mapper/*/*.xml
